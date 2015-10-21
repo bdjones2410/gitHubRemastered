@@ -1,4 +1,7 @@
 /********************************************
+SASS VARIABLES
+********************************************/
+/********************************************
 GENERAL STYLES
 ********************************************/
 ul {
@@ -11,6 +14,16 @@ ul {
 .navRight {
   float: right; }
 
+.rightNavItem {
+  width: 28px;
+  vertical-align: top; }
+  .rightNavItem::before {
+    font-size: 25px;
+    vertical-align: top; }
+  .rightNavItem a img {
+    font-size: 0;
+    width: 100%; }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -21,7 +34,7 @@ nav {
 
 .wrappedHead {
   width: 100%;
-  background-color: lightgrey; }
+  background-color: #EEEEEE; }
 
 .headerNav {
   width: 75%;
@@ -65,7 +78,8 @@ LEFT COLUMN
 
 .names {
   padding-bottom: 10px;
-  border-bottom: 1px #EEEEEE solid; }
+  border-bottom: 1px #EEEEEE solid;
+  margin-bottom: 0; }
 
 #userName {
   font-weight: 100;
@@ -73,18 +87,26 @@ LEFT COLUMN
   font-size: .8em; }
 
 .userInfo {
-  padding: 0;
-  width: 100%; }
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+  font-size: .9em;
+  border-bottom: 1px #EEEEEE solid; }
   .userInfo li {
-    padding: 2px; }
+    width: 100%;
+    padding: 5px 0px; }
     .userInfo li a {
-      color: #4078C0; }
+      color: #4078C0;
+      padding-left: 25px; }
 
 .emailIcon {
   opacity: .3; }
 
 .clockIcon {
   opacity: .3; }
+
+.joinTime {
+  padding-left: 25px; }
 
 /********************************************
 RIGHT COLUMN
@@ -93,6 +115,30 @@ RIGHT COLUMN
   width: 100%; }
   .rColNav .rColButton {
     float: right; }
+
+.repTabButton {
+  padding: 5px;
+  border-left: 1px #EEEEEE solid;
+  border-top: 1px #EEEEEE solid;
+  border-right: 1px #EEEEEE solid;
+  border-bottom: none;
+  border-radius: 3px 3px 0px 0px; }
+
+.pubTabButton {
+  border-bottom: 1px #EEEEEE solid;
+  padding: 5px; }
+
+.editProfile {
+  background-color: #EEEEEE;
+  color: 000;
+  padding: 2px 4px;
+  border-radius: 5px;
+  font-weight: bold; }
+
+.editText {
+  font-weight: bold;
+  font-size: .8em;
+  margin-left: 2px; }
 
 .repoListItem {
   float: right; }

@@ -41,7 +41,7 @@
                         <a class="email" href="#"></a>
                     </li>
                     <li id="joinDate"><span class=
-                    "clockIcon octicon octicon-clock"></span><span class="joinOn"></span><span class="joinTime">date</span></li>
+                    "clockIcon octicon octicon-clock"></span><span class="joinTime"></span></li>
                 </ul>
                 <div class="followStar">
                     <a class="follSt" href="#"><span>0</span><span class=
@@ -59,15 +59,14 @@
             <section id="rightCol">
                 <div class="rColNav">
                     <div class="rColButton">
-                        <a class="editButton" href="#"><span class=
-                        "pencil">pencil icon</span>" Edit Profile "</a>
+                        <button class="editProfile octicon octicon-pencil"><span class="editText">Edit profile</span></button>
                     </div>
                     <nav class="navTabs">
-                        <a href="/bdjones2410?tab=repositories"><span class=
-                        "bookIcon">book<span>" Repositories "</span></span></a>
-                        <a href="/bdjones2410?tab=activity"><span class=
-                        "wifiIcon">wifi<span>" Public activity
-                        "</span></span></a>
+                        <a href="#" class="repTabButton"><span class=
+                        "bookIcon octicon octicon-repo"></span><span> Repositories "</span></a>
+                        <a href="#"  class="pubTabButton"><span class=
+                        "wifiIcon octicon octicon-rss"></span><span>" Public activity
+                        "</span></a>
                     </nav>
                 </div>
                 <div class="repoTab">
@@ -75,7 +74,7 @@
                     <div class="repoNav">
                         <span class="bookIcon"></span>
                         <div class="repoSearchField">
-                            <span class="bookIcon">Search Repository</span>
+                            <span class="bookIcon ">Search Repository</span>
                         </div><span class="bookIcon"><a class="searchButton"
                         href="#">" Search "</a></span>
                         <ul class="repoFilter">
@@ -92,7 +91,7 @@
                             <li class="repoFilterItems"><span class=
                             "bookIcon">Mirrors</span></li>
                         </ul><span class="bookIcon"><a class="newRepoButton"
-                        href="#"><span class="repBookIcon">book</span>" NEW
+                        href="#"><span class="repBookIcon octicon octicon-repo"></span>" NEW
                         "</a></span>
                     </div>
                     <ul class="repoStuff">
@@ -201,6 +200,7 @@
           </div>
         </div>
     <footer>
+      <script src="bower_components/moment/moment.js"></script>
         <script charset="utf-8" src="bower_components/jquery/dist/jquery.js">
         </script>
         <script charset="utf-8" src=

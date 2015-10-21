@@ -13,9 +13,12 @@ $('.smallMe').html(
   +"</a>"
 );
 
+var createDate = moment(user.created_at).format('ll');
+
 $('#fullName').text(user.name);
 $('#userName').text(user.login);
 $('.email').text(user.email);
+$('.joinTime').text(" Joined On " + createDate);
 
 
 
