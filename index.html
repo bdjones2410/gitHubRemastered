@@ -3,40 +3,45 @@
 <head>
     <meta charset="utf-8">
     <title>github recreate</title>
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
 </head>
 <body>
-    <header class="headerNav">
-        <a href="github.com">kittylink</a>
-        <div class="searchBar">
-            search bar
-        </div>
-        <ul class="navLeft">
-            <li class="leftNavItem"><span class="lNavWords">Pull
-            requests</span></li>
-            <li class="leftNavItem"><span class="lNavWords">Issues</span></li>
-            <li class="leftNavItem"><span class="lNavWords">Gist</span></li>
-        </ul>
-        <ul class="navRight">
-            <li class="rightNavItem">bell</li>
-            <li class="rightNavItem">+dropdownlist</li>
-            <li class="rightNavItem">picdropdownlist</li>
-        </ul>
-    </header>
+    <header class="wrappedHead">
+        <header class="headerNav">
+            <a class="mega-octicon octicon-mark-github" href="github.com"></a>
+            <div class="searchBar">
+                search bar
+            </div>
+            <ul class="navLeft">
+                <li class="leftNavItem"><span class="lNavWords">Pull
+                requests</span></li>
+                <li class="leftNavItem"><span class="lNavWords">Issues</span></li>
+                <li class="leftNavItem"><span class="lNavWords">Gist</span></li>
+            </ul>
+            <ul class="navRight">
+                <li class="rightNavItem octicon octicon-bell"></li>
+                <li class="rightNavItem octicon octicon-plus"></li>
+                <li class="rightNavItem smallMe"></li>
+            </ul>
+        </header>
+  </header>
     <section class="pageContent">
         <section id="wrapper">
             <section id="leftCol">
-                <div class="mainImage"><img alt="" src=
-                "http://www.fillmurray.com/200/300"></div>
-                <h1 class="names"><span id="fullName">Brandon Jones</span>
-                <span id="userName">bdjones2410</span></h1>
+                <div class="mainImage">
+
+                </div>
+                <h1 class="names"><span id="fullName"></span>
+                <span id="userName"></span></h1>
                 <ul class="userInfo">
                     <li id="userEmail">
-                        <span class="emailIcon">email
-                        icon</span><a>useremail</a>
+                        <span class="emailIcon octicon octicon-mail"></span>
+                        <a class="email" href="#"></a>
                     </li>
                     <li id="joinDate"><span class=
-                    "clockIcon">clock</span><span class="joinOn">joined
-                    On</span><span class="joinTime">date</span></li>
+                    "clockIcon octicon octicon-clock"></span><span class="joinOn"></span><span class="joinTime">date</span></li>
                 </ul>
                 <div class="followStar">
                     <a class="follSt" href="#"><span>0</span><span class=
@@ -173,25 +178,28 @@
             </section>
         </section>
     </section>
-    <div class="footNav">
-        <ul class="smallFootNav">
-            <li id="githubCopy">&copy; GitHub, Inc.</li>
-            <li class="botNav">Terms</li>
-            <li class="botNav">Privacy</li>
-            <li class="botNav">Security</li>
-            <li class="botNav">Contact</li>
-            <li class="botNav">Help</li>
-        </ul><a class="kittyBotNav" href="#">kittyicon</a>
-        <ul class="smallFootNav">
-            <li class="botNav">Status</li>
-            <li class="botNav">API</li>
-            <li class="botNav">Training</li>
-            <li class="botNav">Shop</li>
-            <li class="botNav">Blog</li>
-            <li class="botNav">About</li>
-            <li class="botNav">Pricing</li>
-        </ul>
-    </div>
+        <div class="footBase">
+          <div class="footNav">
+              <ul class="smallFootNav">
+                  <li id="githubCopy">&copy; GitHub, Inc.</li>
+                  <li class="botNav">Terms</li>
+                  <li class="botNav">Privacy</li>
+                  <li class="botNav">Security</li>
+                  <li class="botNav">Contact</li>
+                  <li class="botNav">Help</li>
+              </ul>
+              <a class="octicon octicon-mark-github opac" href="#"></a>
+              <ul class="smallFootNav sFN">
+                  <li class="botNav2">Status</li>
+                  <li class="botNav2">API</li>
+                  <li class="botNav2">Training</li>
+                  <li class="botNav2">Shop</li>
+                  <li class="botNav2">Blog</li>
+                  <li class="botNav2">About</li>
+                  <li class="botNav2">Pricing</li>
+              </ul>
+          </div>
+        </div>
     <footer>
         <script charset="utf-8" src="bower_components/jquery/dist/jquery.js">
         </script>
