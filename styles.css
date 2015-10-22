@@ -153,6 +153,9 @@ RIGHT COLUMN
 /********************************************
 REPOSITORY TAB
 ********************************************/
+.repoNav {
+  width: 100%; }
+
 .repoListItem {
   float: right; }
 
@@ -199,6 +202,9 @@ a.repoTitle h3 {
 /********************************************
 ACTIVITY TAB
 ********************************************/
+.publicActTab {
+  display: none; }
+
 .create {
   width: 100%;
   padding: 20px 0;

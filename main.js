@@ -35,7 +35,12 @@ $('#userName').text(user.login);
 $('.email').text(user.email);
 $('.joinTime').text(" Joined On " + createDate);
 
-///////////// repostuff ////////
+
+
+///////////// TABS /////////////////////////
+
+
+
 $('.repTabButton').click(function(event){
   event.preventDefault();
   $('.repoTab').css('display', 'inline-block')
@@ -47,6 +52,13 @@ $('.pubTabButton').click(function(event){
   $('.publicActTab').css('display', 'inline-block')
   $('.repoTab').css('display', 'none')
 })
+
+
+
+///////   REPOSITORY BAR ////////////////////
+//// .substring ///////  allows you to pull out sections of an array(0, 6) = first 7 items of array.
+
+
 
 var repositBar = "";
   _.each(repos, function(curVal, idx, arr){
