@@ -150,6 +150,9 @@ RIGHT COLUMN
   .repBookIcon:before {
     margin-right: 2px; }
 
+/********************************************
+REPOSITORY TAB
+********************************************/
 .repoListItem {
   float: right; }
 
@@ -192,6 +195,85 @@ a.repoTitle h3 {
 .repoUpdateTime {
   font-size: .7em;
   color: #CCCCCC; }
+
+/********************************************
+ACTIVITY TAB
+********************************************/
+.create {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px #EEEEEE solid; }
+  .create div span {
+    display: inline-block;
+    color: #4078C0; }
+
+.icon {
+  float: left;
+  width: 8%;
+  margin-top: 5px;
+  padding-left: 10px; }
+  .icon:before {
+    opacity: .3; }
+
+.createBar {
+  width: 100%;
+  margin: 5px 0; }
+  .createBar h5 {
+    display: inline-block;
+    margin: 0; }
+
+.pushIcon {
+  float: left;
+  width: 8%;
+  margin-top: 20px; }
+  .pushIcon:before {
+    font-size: 35px;
+    opacity: .3; }
+
+.innerpush {
+  float: right;
+  width: 90%; }
+
+.publicActTab {
+  width: 100%; }
+  .publicActTab span {
+    color: #4078C0; }
+
+span.message {
+  color: #DDDDDD; }
+
+.midMe img {
+  width: 25px;
+  border-radius: 2px; }
+
+.smlMe img {
+  width: 15px;
+  border-radius: 2px; }
+
+.branchtype {
+  background-color: #EEEEEE;
+  border-radius: 3px;
+  padding: 1px 2px; }
+
+.timeBar {
+  width: 100%; }
+
+time {
+  font-size: .8em;
+  color: #DDDDDD; }
+
+.opac2 {
+  opacity: .3; }
+  .opac2:before {
+    margin-left: 0; }
+
+.infoBar {
+  width: 100%; }
+  .infoBar img {
+    vertical-align: top; }
+  .infoBar span {
+    display: inline-block;
+    vertical-align: top; }
 
 /********************************************
 FOOTER LINKS

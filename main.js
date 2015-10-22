@@ -12,6 +12,21 @@ $('.smallMe').html(
   +"'>"
   +"</a>"
 );
+$('.smlMe').html(
+  "<a href='#'>"
+  +"<img src='"
+  + user.avatar_url
+  +"'>"
+  +"</a>"
+);
+
+$('.midMe').html(
+  "<a href='#'>"
+  +"<img src='"
+  + user.avatar_url
+  +"'>"
+  +"</a>"
+);
 
 var createDate = moment(user.created_at).format('ll');
 
@@ -63,6 +78,10 @@ var repositBar = "";
   });
 
 $('.repoSect').html(repositBar);
+
+_.each(activity, function(currVal){
+  console.log(currVal.type);
+})
 
 
 
