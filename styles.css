@@ -144,6 +144,46 @@ RIGHT COLUMN
 .repoListItem {
   float: right; }
 
+.repoFilterItems {
+  color: #4078C0;
+  padding: 0 4px; }
+  .repoFilterItems:hover {
+    color: black; }
+
+.repoBar {
+  width: 100%;
+  padding: 40px 0;
+  border-bottom: 1px #EEEEEE solid; }
+
+.upperRepo {
+  width: 100%;
+  margin: 5px 0; }
+
+.repoType {
+  float: right;
+  color: #CCCCCC;
+  font-size: .8em; }
+
+.starIcon::before {
+  font-size: 14px;
+  padding: 0 4px 0 10px; }
+
+.branchicon::before {
+  font-size: 14px;
+  padding: 0 4px 0 10px; }
+
+a.repoTitle h3 {
+  color: #4078C0;
+  margin: 0; }
+
+.lowerRepo {
+  width: 100%;
+  margin: 5px 0; }
+
+.repoUpdateTime {
+  font-size: .7em;
+  color: #CCCCCC; }
+
 .opac {
   opacity: .3;
   width: 19%; }
