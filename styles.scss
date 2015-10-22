@@ -177,6 +177,18 @@ RIGHT COLUMN
   margin-left:2px;
 }
 
+.repBookIcon {
+  background-color:#5BA641;
+  padding:10px;
+  color:white;
+  border-radius: 7px;
+  border: 1px green solid;
+  &:before{
+    margin-right: 2px;
+  }
+}
+
+
 .repoListItem{
   float:right;
 }
@@ -228,6 +240,10 @@ a.repoTitle{
   font-size:.7em;
   color:#CCCCCC;
 }
+
+/********************************************
+FOOTER LINKS
+********************************************/
 
 
 .opac {

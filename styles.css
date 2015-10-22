@@ -141,6 +141,15 @@ RIGHT COLUMN
   font-size: .8em;
   margin-left: 2px; }
 
+.repBookIcon {
+  background-color: #5BA641;
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+  border: 1px green solid; }
+  .repBookIcon:before {
+    margin-right: 2px; }
+
 .repoListItem {
   float: right; }
 
@@ -184,6 +193,9 @@ a.repoTitle h3 {
   font-size: .7em;
   color: #CCCCCC; }
 
+/********************************************
+FOOTER LINKS
+********************************************/
 .opac {
   opacity: .3;
   width: 19%; }

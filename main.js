@@ -21,18 +21,17 @@ $('.email').text(user.email);
 $('.joinTime').text(" Joined On " + createDate);
 
 ///////////// repostuff ////////
-// var newRepo =  function(){
-//   for (i = 0; i < repos.length; i++) {
-//     return {
-//           name: repos[i].name,
-//           language: repos[i].language,
-//           forks: repos[i].forks_count,
-//           star: repos[i].stargazers_count,
-//           updated: repos[i].updated_at
-//        }
-// };
-// }
-// smallerRepo = newRepo();
+$('.repTabButton').click(function(event){
+  event.preventDefault();
+  $('.repoTab').css('display', 'inline-block')
+  $('.publicActTab').css('display', 'none')
+});
+
+$('.pubTabButton').click(function(event){
+  event.preventDefault();
+  $('.publicActTab').css('display', 'inline-block')
+  $('.repoTab').css('display', 'none')
+})
 
 var repositBar = "";
   _.each(repos, function(curVal, idx, arr){
@@ -61,7 +60,6 @@ var repositBar = "";
     +"</div>"
     +"</div>"
     +"</div>";
-    console.log("smallerRepo: ", repositBar);
   });
 
 $('.repoSect').html(repositBar);
