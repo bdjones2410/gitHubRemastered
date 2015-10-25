@@ -226,7 +226,12 @@ ACTIVITY TAB
   margin: 5px 0; }
   .createBar h5 {
     display: inline-block;
-    margin: 0; }
+    margin: 0 5px; }
+  .createBar h6 {
+    display: inline-block;
+    margin: 0 5px;
+    font-weight: lighter;
+    font-size: .8em; }
 
 .pushIcon {
   float: left;
@@ -246,15 +251,20 @@ ACTIVITY TAB
     color: #4078C0; }
 
 span.message {
-  color: #DDDDDD; }
+  color: #BBBBBB;
+  font-size: .8em; }
 
-.midMe img {
-  width: 25px;
-  border-radius: 2px; }
+.midMe {
+  margin: 0 3px; }
+  .midMe img {
+    width: 25px;
+    border-radius: 2px; }
 
-.smlMe img {
-  width: 15px;
-  border-radius: 2px; }
+.smlMe {
+  margin: 0 3px; }
+  .smlMe img {
+    width: 15px;
+    border-radius: 2px; }
 
 .branchtype {
   background-color: #EEEEEE;
@@ -279,7 +289,8 @@ time {
     vertical-align: top; }
   .infoBar span {
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    margin-right: 5px; }
 
 /********************************************
 FOOTER LINKS

@@ -282,7 +282,13 @@ ACTIVITY TAB
   margin:5px 0;
   h5 {
     display:inline-block;
-    margin:0;
+    margin:0 5px;
+  }
+  h6{
+    display:inline-block;
+    margin:0 5px;
+    font-weight:lighter;
+    font-size:.8em;
   }
 }
 .pushIcon{
@@ -306,15 +312,18 @@ ACTIVITY TAB
   }
 }
 span.message{
-  color:#DDDDDD;
+  color:#BBBBBB;
+  font-size:.8em;
 }
 .midMe{
+  margin: 0 3px;
   img{
       width:25px;
       border-radius: 2px;
     }
 }
 .smlMe{
+  margin: 0 3px;
   img{
       width:15px;
       border-radius: 2px;
@@ -346,6 +355,7 @@ time {
   span{
     display:inline-block;
     vertical-align: top;
+    margin-right:5px;
   }
 }
 

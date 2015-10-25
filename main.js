@@ -91,9 +91,148 @@ var repositBar = "";
 
 $('.repoSect').html(repositBar);
 
-_.each(activity, function(currVal){
-  console.log(currVal.type);
-})
+
+
+/////////activity Tab ///////////
+
+
+var activityBar = "";
+_.each(activity, function(curAct){
+  if(curAct.type==="PushEvent") {
+    activityBar += "<div class= 'repoBar'>"
+          +"<div class='pushIcon mega-octicon octicon-git-commit'>"
+          +"</div>"
+          +"<section class='innerpush'>"
+          +'<div class ="timeBar">'
+          + '<time class ="createTime">'
+          +moment(curAct.created_at).startOf('hour').fromNow()
+          +'</time>'
+          +'</div>'
+          +'<div class ="createBar">'
+          + '<span class="createUser">'
+          + curAct.actor.login
+          +'</span>'
+          + '<h5>pushed to</h5>'
+          +'<span class="branchtype">'
+          + curAct.payload.ref.split('/').pop()
+          +'</span>'
+          +'<h5>at</h5>'
+          +'<span class="url">'
+          +curAct.repo.name
+          +'</span>'
+          +'</div>'
+          +'<div class="infoBar">'
+          +'<div class="midMe">'
+          + "<a href='#'>"
+          +"<img src='"
+          + curAct.actor.avatar_url
+          +"'>"
+          +"</a>"
+          +'</div>'
+          +'<div class="smlMe">'
+          +"<a href='#'>"
+          +"<img src='"
+          + curAct.actor.avatar_url
+          +"'>"
+          +"</a>"
+          +'</div>'
+          +'<span class="shaNum">'
+          +curAct.payload.commits[0].sha.substring(0,7)
+          +'</span>'
+          + '<span class="message">'
+          + curAct.payload.commits[0].message
+          +'</span>'
+          +'</div>'
+          +'</section>'
+          +'</div>'
+  }
+    else if (curAct.type==="CreateEvent" && curAct.payload.ref_type==="branch") {
+      activityBar += "<div class= 'createBar'>"
+      +'<div class ="create">'
+      +'<div class="createBar">'
+      +'<div class="icon octicon octicon-git-branch">'
+      +'</div>'
+      +'<section class="innerpush">'
+      +'<span class="createUser">'
+      +" "
+      +curAct.actor.login
+      +" "
+      +'</span>'
+      +'<h6>created '
+      +" "
+      +curAct.payload.ref_type
+      +" "
+      +'</h6>'
+      +'<span class="branchtype">'
+      +" "
+      +curAct.payload.ref
+      +" "
+      +'</span>'
+      +'<h5>at</h5>'
+      +'<span class="url">'
+      +" "
+      +curAct.repo.name
+      +" "
+      +'</span>'
+      +'<time class ="createTime">'
+      +" "
+      +moment(curAct.created_at).startOf('hour').fromNow()
+      +" "
+      +'</time>'
+      +'</section>'
+      +'</section>'
+      +'</div>'
+      +'</div>'
+    }
+
+    else if (curAct.type==="CreateEvent" && curAct.payload.ref_type==="repository") {
+      activityBar += "<div class= 'createBar'>"
+      +'<div class ="create">'
+      +'<div class="createBar">'
+      +'<div class="icon octicon octicon-repo">'
+      +'</div>'
+      +'<section class="innerpush">'
+      +'<span class="createUser">'
+      +"  "
+      +curAct.actor.login
+      +"  "
+      +'</span>'
+      +'<h6>'
+      +"  "
+      +"created "
+      +curAct.payload.ref_type
+      +"  "
+      +'</h6>'
+      +'<span class="url">'
+      +"  "
+      +curAct.repo.name
+      +"  "
+      +'</span>'
+      +'<time class ="createTime">'
+      +"  "
+      +moment(curAct.created_at).startOf('hour').fromNow()
+      +"  "
+      +'</time>'
+      +'</section>'
+      +'</section>'
+      +'</div>'
+      +'</div>'
+
+    }
+
+});
+$('.publicActTab').html(activityBar);
+
+
+
+
+_.each(activity, function(curVal){
+     return _.each(curVal.payload.commits, function(stuff){
+        return(stuff.message);
+    });
+});
+
+
 
 
 
